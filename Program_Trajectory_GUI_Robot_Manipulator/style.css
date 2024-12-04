@@ -1,0 +1,144 @@
+
+body {
+  font-family: 'Poppins', sans-serif; 
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #1e3c72, #2a5298);
+  color: #ffffff;
+  overflow-x: hidden;
+  animation: fadeInBackground 3s ease-in-out;
+}
+
+
+@keyframes fadeInBackground {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to right, #950000, #006ea5);
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  animation: slideDown 1s ease-out;
+}
+
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  animation: zoomIn 0.8s ease-in-out;
+}
+
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #eeeeee;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+
+button,
+#connect-btn {
+  padding: 12px 20px;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+button:hover,
+#connect-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+#status {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffee58;
+}
+
+
+#status {
+  animation: floatStatus 2s infinite ease-in-out;
+}
+
+@keyframes floatStatus {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
